@@ -12,7 +12,7 @@ export default function FranchiseForm({ compact = false }) {
     const formData = new FormData(e.target)
 
     const response = await fetch(
-      "https://formspree.io/f/YOUR_FORMSPREE_ID",
+      "https://formspree.io/f/xqevdgew",
       {
         method: "POST",
         body: formData,

@@ -100,22 +100,22 @@ export default function Footer() {
               <div>
                 <p className="text-white/25 text-xs uppercase tracking-widest mb-1">Email</p>
                 <a href="mailto:hello@cocotang.in" className="text-white/70 hover:text-white text-sm transition-colors">
-                  hello@cocotang.in
+                  contactcocotang@gmail.com
                 </a>
               </div>
               <div>
                 <p className="text-white/25 text-xs uppercase tracking-widest mb-1">Phone</p>
-                <a href="tel:+919876543210" className="text-white/70 hover:text-white text-sm transition-colors">
-                  +91 98765 43210
+                <a href="tel:+919032191010" className="text-white/70 hover:text-white text-sm transition-colors">
+                  +91 90321 91010
                 </a>
               </div>
               <div>
                 <p className="text-white/25 text-xs uppercase tracking-widest mb-1">Availability</p>
-                <p className="text-white/70 text-sm">Nationwide Delivery · India</p>
+                <p className="text-white/70 text-sm">Delivery in Hyderabad </p>
               </div>
               <div>
                 <p className="text-white/25 text-xs uppercase tracking-widest mb-1">Hours</p>
-                <p className="text-white/70 text-sm">Mon – Sat, 9am – 6pm IST</p>
+                <p className="text-white/70 text-sm">Mon – Sat, 10am – 7pm IST</p>
               </div>
             </div>
           </div>
