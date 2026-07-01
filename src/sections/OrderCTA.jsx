@@ -98,23 +98,31 @@ export default function OrderCTA() {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <span className="text-[#D42B2B]">📧</span>
-                  <span className="text-white/80 text-sm">hello@cocotang.in</span>
+                  <span className="text-white/80 text-sm">contactcocotang@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-[#D42B2B]">📱</span>
-                  <span className="text-white/80 text-sm">+91 98765 43210</span>
+                  <span className="text-white/80 text-sm">+91 90321 91010</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-[#D42B2B]">📍</span>
-                  <span className="text-white/80 text-sm">India – Delivering Nationwide</span>
+                  <span className="text-white/80 text-sm">Delivery in Hyderabad</span>
                 </div>
               </div>
 
               <div className="flex gap-4 mt-6">
-                {['Instagram', 'WhatsApp', 'LinkedIn'].map((s) => (
+                {['Instagram', 'WhatsApp', 'Facebook'].map((s) => (
                   <a
                     key={s}
-                    href="#"
+                    href={
+                      s === 'Instagram'
+                        ? 'https://www.instagram.com/cocotangindia/'
+                        : s === 'WhatsApp'
+                        ? 'https://wa.me/919032191010'
+                        : 'https://www.facebook.com/COCOTANGINDIA/'
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-white/40 hover:text-white text-sm transition-colors hover:text-[#F5A623]"
                   >
                     {s}

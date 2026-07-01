@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
 
 const navLinks = [
-  { label: 'Our Story', href: '#story' },
+  { label: 'Franchise', href: '/franchise' },
   { label: 'Products', href: '#products' },
-  { label: 'Benefits', href: '#benefits' },
+  { label: 'Store Formats', href: '#formats' },
   { label: 'Gallery', href: '#gallery' },
   { label: 'Testimonials', href: '#testimonials' },
   { label: 'Contact', href: '#contact' },
@@ -50,14 +50,22 @@ export default function Footer() {
               Premium tender coconut beverages. Raw, unprocessed, and alive with real flavour — straight from the coast to you.
             </p>
             <div className="flex gap-4">
-              {['IG', 'WA', 'LI', 'FB'].map((s) => (
-                <a
-                  key={s}
-                  href="#"
+              {['IG', 'WA', 'FB'].map((s) => (
+                 <a
+                    key={s}
+                    href={
+                      s === 'IG'
+                        ? 'https://www.instagram.com/cocotangindia/'
+                        : s === 'WA'
+                        ? 'https://wa.me/919032191010'
+                        : 'https://www.facebook.com/COCOTANGINDIA/'
+                    }
+                    target="_blank"
+                    rel="noopener noreferrer"
                   className="w-9 h-9 glass rounded-lg flex items-center justify-center text-white/40 hover:text-white hover:border-[#D42B2B]/40 transition-all text-xs font-bold border border-white/5"
-                >
-                  {s}
-                </a>
+                  >
+                    {s}
+                  </a>
               ))}
             </div>
           </div>
